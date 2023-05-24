@@ -29,8 +29,9 @@ function Home() {
     <div>
       <SearchBar filterHotels={filterHotels} />
       <div className="hotels-container">
-        {filteredHotels.map((h) => (
+        {filteredHotels?.map((h) => (
           <HotelCard
+            key={h.id}
             name={h.name}
             location={h.location}
             id={h.id}
