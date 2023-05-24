@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-container {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hotels-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.hotel-item {
+  background-color: bisque;
+  border-radius: 20px;
+  height: 150px;
+  padding: 10px;
+}
+
+.hotel-item:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: slateblue;
+  color: white;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  background-color: slateblue;
+  width: 100%;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.searchbar {
+  margin-top: 50px;
+  border-radius: 20px;
+  border: solid 2px lightsalmon;
+  color: lightsalmon;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightsalmon;
+}
+
+h1,
+h2,
+h3 {
+  color: lightsalmon;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  color: slateblue;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
