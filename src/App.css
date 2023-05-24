@@ -118,3 +118,8 @@ img {
   background-color: antiquewhite;
   cursor: pointer;
 }
+
+.booked-room {
+  pointer-events: none;
+  background-color: lemonchiffon;
+}
